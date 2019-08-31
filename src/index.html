@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
@@ -12,8 +12,75 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
+<body>
+  <from action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+
+    <fieldset>
+      <legend>Personal information</legend>
+      <label>
+        Surname: <input type="text" name="surname"><br>
+      </label>
+      <label>
+        Name: <input type="text" name="name"><br>
+      </label>
+      <label>
+        How old are You? <input type="number" name="old" value="12" maxlength="2" size="4" data-qa="field-value"><br>
+      </label>
+      <label>
+        Full date of birth: <input type="date" name="birth" value="mm-dd-yyy"><br>
+      </label>
+      <label>
+        I accept the term of the agreement <input type="checkbox" name="agreement">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <label>
+        E-mail: <input type="email" name="email" placeholder="email@example.com" data-qa="field-placeholder"><br>
+      </label>
+      <label>
+        Password: <input type="password" name="password"><br>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting about you</legend>
+      <label>
+        Do you love cats? <input type="radio" name="love-cats"> Yes <input type="radio" name="love-cats"> No <br>
+      </label>
+      <label>
+        What is your favorite color? <input type="color" name="color"><br>
+      </label>
+      <label>
+        What time do you go to bad? <input type="time" name="go-bad" value="--:--:-- --"><br>
+      </label>
+      <label>
+        What is your favorite brand of cars? <input type="text" name="brand-of-cars"><br>
+      </label>
+      <label>
+        How do you rate out work? <input type="range" name="rate-work" min="0" max="11" value="0" step="1">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label>
+        Comments: <textarea name="comments"></textarea><br>
+      </label>
+      <label>
+        Would you recommend us?
+        <select name="" id="">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <input type="button" value="Submit">
+  </from>
+  <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>
