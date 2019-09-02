@@ -1,14 +1,16 @@
-/*i know what i should use classes, but for this exercise i decided use tegs*/
-
-fieldset {
+.part-of-form {
   margin-bottom: 20px;
 }
 
-label {
+.label {
   display: block;
   margin-bottom: 10px;
 }
 
-label:last-child {
+.label:last-child {
   margin-bottom: 0;
+}
+
+.inline {
+  display: inline;
 }
